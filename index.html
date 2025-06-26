@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="nav-desktop">
+        <div class="logo">Iswarya.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Iswarya.</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container ">
+            <img src="./assets/profile3.png" alt="ishu-pic">
+        </div>
+        <div class="section_text">
+            <div class="section_text1">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Iswarya Madamanchi</h1>
+                <p class="section_text_p2">Student</p>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color2" onclick="window.open('./assets/MADAMANCHI_ISWARYA_Resume.pdf')">Download
+                    CV</button>
+                <button class="btn btn-color1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/madamanchi-iswarya-339503305'">
+                <img src="./assets/github.png" alt="github" class="icon"
+                    onclick="location.href='https://github.com/iswarya-madamanchi'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-headings" style="align-items: center;">
+            <p style="text-align: center; margin-top: 2rem;">Get To Know More</p>
+            <h1 style="text-align: center;">About me</h1>
+        </div>
+        <div class="about-para">
+            <p class="justify-text" style="text-align: justify;">To leverage my passion for technology and continuous
+                learning in a dynamic environment, where I can apply and enhance my skills in software development,
+                contribute to innovative projects, and grow as a professional through real-world problem-solving and
+                collaboration.</p>
+        </div>
+        <div class="education">
+            <div><img src="./assets/education.png" alt="education"></div>
+            <div>
+                <h3 style="color: black;;">Education</h3>
+            </div>
+        </div>
+        <div class="education-p">
+            <div class="education-p1 p">
+            <p style="color: black;">Btech 
+            <p>Electronics & Communication</p>
+            <p>RGUKT, RKValley.</p>
+            <p class="p1-1" style="text-indent:12px;">CGPA: 7.41 | (2022-Present)</p>
+            </div>
+            <div class="education-p2 p">
+            <p style="color: black;">Pre University Course</p>
+            <p>(MPC)</p>
+            <p> RGUKT, RKValley.</p>
+            <p class="p1-2" style="text-indent:12px;">CGPA: 9.1 | (2020-2022)</p>
+            </div>
+            <div class="education-p3 p">
+            <p style="color: black;">Secondary Education</p>
+            <p>Lumbini High School,</p>
+            <p> Chejarla.</p>
+            <p class="p1-3" style="text-indent:12px;">GPA : 10 | (2019-2020)</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-headings"><p>Explore My</p>
+        <h1>Skills</h1>
+        </div>
+        <div class="skills-s">
+        <div class="skills1 skill">
+            <h3>Programming Languages</h3>
+            <p>C</p>
+            <P>JAVA</P>
+        </div>
+        <div class="skills2 skill">
+            <h3>Frontend</h3>
+            <p>HTML</p>
+            <P>CSS</P>
+            <P>JavaScript</P>
+        </div>
+         <div class="skills3 skill">
+            <h3>Tools</h3>
+            <p>Github</p>
+            <p>VS Code</p>
+        </div>
+        </div>
+    </section>
+    <section id="projects" >
+        <div class="projects-headings"><p>
+        <h1>My Projects</h1>
+        </div>
+        <div class="pro-projects">
+        <div class="project1 pro">
+                            <h3>Amazon Clone</h3>
+            <div class="image">
+                 <img src="./assets/amazonclone.png" alt="project1">
+ 
+            </div>
+             <button class="btn btn-color1" onclick="location.href='https://github.com/iswarya-madamanchi'">Github</button>
+
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-headings"><h3>Contact Me</h3></div>
+        <div class="contact-details">
+        <div class="contact-details-container">
+            <div class="pp"><img src="./assets/email.png" alt="email">
+            <h3><a href="mailto:ishumadamanchi00@gmail.com">ishumadamanchi00@gmail.com</a></h3>
+            </div>
+            <div class="pp">
+            <img src="./assets/linkedin.png" alt="linkedin">
+            <h3><a href="https://www.linkedin.com/in/madamanchi-iswarya-339503305">Linkedin</a></h3>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
